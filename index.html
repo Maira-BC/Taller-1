@@ -5,42 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de atención y gestión de turnos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav>
-        <button type="button" id="obtener-turno">Obtener turno</button>
-        <button type="button" id="estado-turnos">Estado de turnos</button>
-    </nav>
+    <div class="encabezado">
+        <header>
+            <h1>Sistema de atención y gestión de turnos</h1>
+        </header>
+        <nav>
+            <button type="button" id="obtener-turno">Obtener turno</button>
+            <button type="button" id="estado-turnos">Estado de turnos</button>
+        </nav>
+    </div>
     <section id="contenido-obtener-turno">
-        <h2>OBTENER TURNO</h2>
-        <hr>
-        <p>Tipo de atención:</p>
-        <select id="tipo-atencion">
-            <option value="">Seleccionar tipo de atención</option>
-            <option value="matricula">Matrícula</option>
-            <option value="finanzas">Finanzas</option>
-            <option value="becas">Becas</option>
-            <option value="asesoria">Asesoría</option>
-        </select>
-        <br>
-        <button type="button" id="generar-numero">GENERAR NÚMERO</button>
-        <p>Tu turno:</p>
-        <p id="numero-turno">- -</p>
-        <p>Estado: <span id="estado-turno">- -</span></p>
+        <div class="contenido1">
+            <h2>OBTENER TURNO</h2>
+            <hr>
+            <p>Tipo de atención:</p>
+            <select id="tipo-atencion" class="form-select">
+                <option value="">Seleccionar tipo de atención</option>
+                <option value="matricula">Matrícula</option>
+                <option value="finanzas">Finanzas</option>
+                <option value="becas">Becas</option>
+                <option value="asesoria">Asesoría</option>
+            </select>
+            <button type="button" id="generar-numero" class="btn">GENERAR NÚMERO</button>
+            <p>Tu turno:</p>
+            <p id="numero-turno">- -</p>
+            <p>Estado: <span id="estado-turno">- -</span></p>
+        </div>
     </section>
     <section id="contenido-estado-turnos">
-        <h2>ESTADO DE ATENCIÓN</h2>
-        <hr>
-        <p>Turno actual</p>
-        <p id="turno-actual">- -</p>
-        <p>Módulo de atención: <span id="modulo-atencion">- -</span></p>
-        <p>Atención: <span id="atencion">- -</span></p>
-        <h3>Siguientes turnos</h3>
-        <ul id="lista-espera"></ul>
-        <p>En espera: <span id="turnos-en-espera">0</span></p>
-        <p>Atendidos: <span id="turnos-atendidos">0</span></p>
-        <button type="button" id="llamar-siguiente">LLAMAR SIGUIENTE</button>
+        <div class="contenido2">
+            <h2>ESTADO DE ATENCIÓN</h2>
+            <hr>
+            <p>Turno actual</p>
+            <p id="turno-actual">- -</p>
+            <p>Módulo de atención: <span id="modulo-atencion">- -</span></p>
+            <p>Atención: <span id="atencion">- -</span></p>
+            <h3>Siguientes turnos</h3>
+            <ul id="lista-espera"></ul>
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <p>En espera: <span id="turnos-en-espera">0</span></p>
+                    </div>
+                    <div class="col">
+                        <p>Atendidos: <span id="turnos-atendidos">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="llamar-siguiente" class="btn">LLAMAR SIGUIENTE</button>
+        </div>
     </section>
 </body>
 </html>
