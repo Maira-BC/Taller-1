@@ -35,7 +35,7 @@ body {
 }
 
 .contenido1 button, .contenido2 button {
-    background-color: white;
+    background-color: #96d4d6;
     color: black;
     padding: 5px 15px;
     border: 1px solid #ccc;
@@ -44,16 +44,55 @@ body {
 }
 
 .contenido1 button:hover, .contenido2 button:hover {
-    background-color: #ddd;
+    background-color: #96d4d6;
     border-color: #bbb;
 }
 
 .contenido1 button:focus, .contenido2 button:focus {
-    background-color: #ddd;
+    background-color: #96d4d6;
     border-color: #bbb;
 }
 
 .contenido1 button:active, .contenido2 button:active {
-    background-color: #ddd;
+    background-color: #96d4d6;
     border-color: #bbb;
+}
+
+.contenido2 .col {
+    font-weight: bold;
+}
+
+.titulo-turno {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#numero-turno {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#turno-actual {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#llamar-siguiente {
+    display: block;
+    margin: 10px auto 0;
+}
+
+#lista-espera {
+    list-style: none;
+    padding-left: 0;
+}
+
+#lista-espera li {
+    background-color: white;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
